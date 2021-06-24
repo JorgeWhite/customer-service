@@ -1,4 +1,4 @@
-package com.dws.custormerservice.controller;
+package com.dws.customerservice.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
