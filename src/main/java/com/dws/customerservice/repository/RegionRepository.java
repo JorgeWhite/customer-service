@@ -1,7 +1,7 @@
 package com.dws.customerservice.repository;
 
-import java.util.LinkedList;
 import java.util.List;
+import java.util.ArrayList;
 
 import com.dws.customerservice.dto.Region;
 import com.dws.customerservice.dto.RespuestaApi;
@@ -17,7 +17,7 @@ public class RegionRepository {
     JdbcTemplate jdbcTemplate;
 
     public List<Region> getRegions(){
-        List<Region> regions = new LinkedList<>();
+        List<Region> regions = new ArrayList<>();
         regions = jdbcTemplate.query("SELECT * FROM region", new BeanPropertyRowMapper<Region>(Region.class));
         return regions;
     }
